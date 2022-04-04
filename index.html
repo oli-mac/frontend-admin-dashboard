@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/processor.png" />
+    <title>Admin Dashboard | Activity tracking for Better Performance</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='admin.css'>
+    
+</head>
+<body>
+<!-- ==========================================section 1 header===================================== -->
+
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><span class="icon"><ion-icon name="logo-apple"></ion-icon></span><span class="title">Brand Name</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="home-outline"></ion-icon></span><span class="title">DashBoard</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="people-outline"></ion-icon></span><span class="title">Customers</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span><span class="title">Message</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="help-outline"></ion-icon></span><span class="title">Help</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span><span class="title">Settings</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span><span class="title">Password</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="log-out-outline"></ion-icon></span><span class="title">Sign Out</span></a></li>
+            </ul>
+        </div>
+<!-- ==========================================section 2 main===================================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="user-img">
+                    <img src="images/user.jpg" alt="">
+                </div>
+            </div>
+
+<!-- ==========================================section 3 cards===================================== -->
+            <div class="cardbox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardname">Daily Views</div>
+                    </div>
+                    <div class="iconbox">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardname">Sales</div>
+                    </div>
+                    <div class="iconbox">
+                        <ion-icon name="cart-outline"></ion-icon>                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardname">Comments</div>
+                    </div>
+                    <div class="iconbox">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardname">Earning </div>
+                    </div>
+                    <div class="iconbox">
+                        <ion-icon name="cash-outline"></ion-icon>                    </div>
+                </div>
+            </div>
+<!-- ==========================================section 4 charts===================================== -->
+            <div class="graphbox">
+                <!-- <h2>text </h2> -->
+                <div class="box">
+                    <canvas id="myChart" ></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earning" ></canvas>
+
+                </div>
+            </div>
+            <div class="datalist">
+<!-- ==========================================section 5 details===================================== -->
+                <div class="recent-orders">
+                    <div class="card-header">
+                        <h2>Resent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>star Refrigrator</td>
+                                <td>$1200</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Delivered</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Donna Snider</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Pending">Pending</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Progress">In Progress</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Sonya Frost</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Return">Return</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Airi Satou</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Progress">In Progress</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Dai Rios </td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Pending">Pending</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Paul Byrd</td>
+                                <td>$1200</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Delivered</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Yuri Berry</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Pending">Pending</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Bruno Nash </td>
+                                <td>$1200</td>
+                                <td>Due</td>
+                                <td><span class="status Return">Return</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Gavin Cortez</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Pending">Pending</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Suki Burks</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>star Refrigrator</td>
+                                <td>$1200</td>
+                                <td>Due</td>
+                                <td><span class="status delivered">Delivered</span></td>
+
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>star Refrigrator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status Progress">In Progress</span></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+<!-- ==========================================section 6 customers===================================== -->
+                <div class="recent-customers">
+                    <div class="card-header">
+                        <h2>Resent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img1.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img2.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>France</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img3.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>USA</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img4.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>Japan</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img5.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img6.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>India</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img7.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="images/img8.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>India</span></h4></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ==========================================section q script===================================== -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src='chart.js'></script>
+    <script>
+        //menu toggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+
+        }
+
+        //listed hoverd 
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+            
+        }
+        list.forEach((item) => 
+        item.addEventListener('mouseover',activeLink));
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
